@@ -20,7 +20,8 @@ public class TestReadFile2 {
 		
 		
 
-		String fileName = "/home/jac/eclipse-workspace/StateAndPopulation.txt";
+                String fileName = "/data/StateAndPopulation.txt";
+//		String fileName = "StateAndPopulation.txt";// Stored in the package can change directory to anything 
 
 		// read file into stream, try-with-resources
 		try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
