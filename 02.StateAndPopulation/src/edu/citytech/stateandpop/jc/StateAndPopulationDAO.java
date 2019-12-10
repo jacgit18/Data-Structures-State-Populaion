@@ -20,8 +20,9 @@ public class StateAndPopulationDAO {
 		
 		
 
-		String fileName = "/home/jac/eclipse-workspace/StateAndPopulation.txt";
-
+//		String fileName = "/home/jac/eclipse-workspace/StateAndPopulation.txt";
+		String fileName = "/data/StateAndPopulation.txt";
+		
 		// read file into stream, try-with-resources
 		try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
 			stream.forEach(json -> {
